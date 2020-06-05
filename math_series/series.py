@@ -55,4 +55,4 @@ def sum_series(n, a=0, b=1):
 
 sum_series(3)
 sum_series(8, 1, 3)
-sum_series('one')
+sum_series(6.3)
