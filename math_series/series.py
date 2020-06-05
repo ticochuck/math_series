@@ -10,7 +10,7 @@ def fibonacci(n):
     i = 1
            
     if n == 0:
-        return 0
+        return print(f"Fibonacci of {n} is {n}")
     else:
         while i <= n - 1:
             new = fibo[i - 1] + fibo[i]
@@ -34,7 +34,7 @@ def lucas(n, a, b):
         new = lucas[i - 1] + lucas[i]
         lucas.append(new)
         i += 1
-    print(f"Lucas of {i} is {lucas[-1]}")
+    print(f"Lucas of {i} with {a} and {b} is {lucas[-1]}")
     return lucas[-1]
 
 def sum_series(n, a=0, b=1):
@@ -53,5 +53,6 @@ def sum_series(n, a=0, b=1):
     else:
         return fibonacci(n)
 
-sum_series(10)
+sum_series(3)
 sum_series(8, 1, 3)
+sum_series('one')
