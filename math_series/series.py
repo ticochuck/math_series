@@ -10,7 +10,7 @@ def fibonacci(n):
     i = 1
            
     if n == 0:
-        return print(f"Fibonacci of {n} is {n}")
+        return 0
     else:
         while i <= n - 1:
             new = fibo[i - 1] + fibo[i]
@@ -47,7 +47,7 @@ def sum_series(n, a=0, b=1):
     """
     
     if type(n) != int or type(a) != int or type(b) != int or n < 0 or a < 0 or b <0:
-        return print('Parameter(s) must be intergers >= 0')  
+        return 'Parameter(s) must be intergers >= 0'
     elif a != 0 or b != 1:
         return lucas(n, a, b)
     else:
@@ -55,4 +55,4 @@ def sum_series(n, a=0, b=1):
 
 sum_series(3)
 sum_series(8, 1, 3)
-sum_series(6.3)
+print(sum_series(6.3))

@@ -56,13 +56,13 @@ def test_sum_series_fail():
 
 def test_sum_series_0_pass():
     actual = sum_series(0)
-    expected = 10
+    expected = 0
     assert actual == expected
 
 
 def test_sum_series_0_fail():
     actual = sum_series(0)
-    expected = 0
+    expected = 20
     assert actual != expected
 
 
